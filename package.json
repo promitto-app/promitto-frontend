@@ -1,6 +1,6 @@
 {
   "name": "promitto",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Aplicativo Electron desenvolvido com electron-vite",
   "main": "./out/main/index.js",
   "type": "module",
@@ -13,8 +13,7 @@
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
     "dist": "npm run build && electron-builder",
     "dist:win": "npm run build && electron-builder --win",
-    "dist:win:portable": "npm run build && electron-builder --win portable",
-    "publish": "npm run build && electron-builder --publish=always"
+    "dist:win:portable": "npm run build && electron-builder --win portable"
   },
   "keywords": ["electron", "vite", "typescript"],
   "author": "",
