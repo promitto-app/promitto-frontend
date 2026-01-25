@@ -1,6 +1,6 @@
 {
   "name": "promitto",
-  "version": "1.0.18",
+  "version": "1.0.0",
   "description": "Aplicativo Electron desenvolvido com electron-vite",
   "main": "./out/main/index.js",
   "type": "module",
@@ -86,8 +86,7 @@
     "publish": {
       "provider": "github",
       "owner": "promitto-app",
-      "repo": "promitto-frontend",
-      "private": true
+      "repo": "promitto-frontend"
     }
   }
 }
