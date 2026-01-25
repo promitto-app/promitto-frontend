@@ -1,6 +1,6 @@
 {
   "name": "promitto",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Aplicativo Electron desenvolvido com electron-vite",
   "main": "./out/main/index.js",
   "type": "module",
@@ -50,6 +50,7 @@
   "build": {
     "appId": "com.promitto.app",
     "productName": "Promitto",
+    "artifactName": "${productName}-Setup-${version}.${ext}",
     "directories": {
       "output": "dist",
       "buildResources": "build"
