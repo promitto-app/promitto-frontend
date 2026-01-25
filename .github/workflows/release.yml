@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Build (sem publicar)
-        run: npm run build && electron-builder --win
+        run: npm run dist:win
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
