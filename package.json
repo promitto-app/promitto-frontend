@@ -1,6 +1,6 @@
 {
   "name": "promitto",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Aplicativo Electron desenvolvido com electron-vite",
   "main": "./out/main/index.js",
   "type": "module",
