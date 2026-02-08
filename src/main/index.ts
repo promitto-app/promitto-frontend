@@ -136,10 +136,15 @@ function setupAutoUpdater() {
   })
 
   autoUpdater.on('update-downloaded', info => {
-    sendLogToRenderer('✅ DOWNLOAD COMPLETO!', {
+    sendLogToRenderer('✅ DOWNLOAD COMPLETO! Reiniciando em 3s...', {
       version: info.version
     })
     mainWindow?.webContents.send('update-downloaded', info)
+
+    setTimeout(() => {
+      sendLogToRenderer('🔄 Reiniciando para instalar atualização...')
+      autoUpdater.quitAndInstall(true, true)
+    }, 3000)
   })
 
   if (app.isPackaged) {
