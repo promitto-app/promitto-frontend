@@ -6,7 +6,6 @@ import { LoadingScreen } from './components/shared/loading-screen'
 import { Settings } from './components/settings/settings'
 import { HomeScreen } from './components/home/home-screen'
 import { UpdateNotification } from './components/shared/update-notification'
-import { DebugConsole } from './components/shared/debug-console'
 import './styles.css'
 
 type AppView = 'main' | 'settings'
@@ -37,10 +36,7 @@ function AppContent() {
 
   if (!isAuthenticated) {
     return (
-      <>
-        <LoginScreen />
-        <DebugConsole />
-      </>
+      <LoginScreen />
     )
   }
 
@@ -49,7 +45,6 @@ function AppContent() {
       <>
         <Settings onBack={() => setCurrentView('main')} />
         <UpdateNotification />
-        <DebugConsole />
       </>
     )
   }
@@ -66,7 +61,6 @@ function AppContent() {
         <HomeScreen />
       </main>
       <UpdateNotification />
-      <DebugConsole />
     </div>
   )
 }

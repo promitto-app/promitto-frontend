@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Clock, Info, Star, Trash2, Download, Edit2, Save, X, Search } from 'lucide-react'
+import { Clock, Info, Trash2, Download, Edit2, Save, X, Search } from 'lucide-react'
 import { apiClient } from '../../services/api-client'
 import { AlertDialog } from '../shared/alert-dialog'
 
@@ -437,22 +437,6 @@ export function SessionsSidebar({ onSessionClick }: SessionsSidebarProps) {
         )}
       </div>
 
-      <div className="p-4 border-t border-border">
-        <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-4">
-          <div className="flex items-start gap-3">
-            <Star className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" />
-            <div className="flex-1">
-              <h3 className="text-yellow-400 font-semibold text-sm mb-1">
-                Desbloquear Histórico Completo
-              </h3>
-              <p className="text-gray-400 text-xs leading-relaxed">
-                Atualize para Premium para acessar todas as suas sessões de conversa anteriores e
-                insights
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <AlertDialog
         isOpen={alertDialog.isOpen}
