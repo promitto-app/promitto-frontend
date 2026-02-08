@@ -27,9 +27,7 @@ jobs:
         run: npm ci
 
       - name: Build (sem publicar)
-        run: npm run dist:win
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run build && npx electron-builder --win --publish never
 
       - name: Upload para GitHub Release
         uses: softprops/action-gh-release@v2

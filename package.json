@@ -1,6 +1,6 @@
 {
   "name": "promitto",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Aplicativo Electron desenvolvido com electron-vite",
   "main": "./out/main/index.js",
   "type": "module",
@@ -66,10 +66,6 @@
       "target": [
         {
           "target": "nsis",
-          "arch": ["x64"]
-        },
-        {
-          "target": "portable",
           "arch": ["x64"]
         }
       ],

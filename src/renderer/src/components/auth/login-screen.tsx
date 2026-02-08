@@ -19,11 +19,13 @@ export function LoginScreen() {
 
     try {
       if (isLogin) {
-        await login(email, password)
+        const user = await login(email, password)
+        console.log('Login successful', user)
       } else {
         await register(email, password, name || undefined)
       }
     } catch (err) {
+      console.log(err)
       setError(err instanceof Error ? err.message : 'Erro ao autenticar')
     } finally {
       setLoading(false)
