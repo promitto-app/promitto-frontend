@@ -324,7 +324,7 @@ export function HomeScreen() {
         <div className="flex-1 flex flex-col overflow-y-auto">
           <div className="flex-1 flex flex-col px-8 py-6">
             <div className="mb-6">
-              <h1 className="text-white text-2xl font-semibold mb-1">Iniciar uma Conversaa</h1>
+              <h1 className="text-white text-2xl font-semibold mb-1">Iniciar uma Conversa</h1>
               <p className="text-gray-400 text-xs">
                 Use qualquer uma das ações abaixo para começar
               </p>
